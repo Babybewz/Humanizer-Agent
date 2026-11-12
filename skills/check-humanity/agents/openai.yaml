@@ -1,0 +1,6 @@
+interface:
+  display_name: "ตรวจความเป็นมนุษย์"
+  short_description: "ตรวจสำนวนไทยและอังกฤษ พร้อมเหตุผลและคำแนะนำ"
+  default_prompt: "ใช้ $check-humanity ตรวจข้อความต่อไปนี้ โดยถามเฉพาะตัวเลือกที่ยังไม่ชัดเจนก่อนเริ่ม:"
+policy:
+  allow_implicit_invocation: true
