@@ -266,7 +266,7 @@ function Show-Locate($items) {
 function Run-Pdf([string]$file) {
   if ($Body -and $Mode -ne 'Outline') { Fail 'PDF เลือกได้เฉพาะหน้า (-Pages)' }
   $tool = Get-Command pdftotext -ErrorAction SilentlyContinue
-  if (-not $tool) { Fail 'เครื่องนี้ไม่มีตัวอ่าน PDF (pdftotext) ให้คัดลอกข้อความจาก PDF มาวาง หรือเปิด PDF ด้วย Word แล้วบันทึกเป็น .docx' }
+  if (-not $tool) { Fail 'เครื่องนี้ไม่มีตัวอ่าน PDF (pdftotext) สคริปต์จึงอ่าน PDF นี้ไม่ได้' }
   $info = Get-Command pdfinfo -ErrorAction SilentlyContinue
   $pageCount = $null
   if ($info) {
